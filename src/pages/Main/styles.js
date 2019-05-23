@@ -15,7 +15,7 @@ export const Form = styled.form`
 
   input {
     background: #fff;
-    border: 0;
+    border: ${props => (props.withError ? "solid 2px #F00" : 0)};
     border-radius: 3px;
     color: #444;
     flex: 1;
@@ -35,6 +35,7 @@ export const Form = styled.form`
     margin-left: 10px;
     padding: 0 20px;
     transition: background-color 0.2s ease-in-out;
+    width: 80px;
 
     &:hover {
       background-color: #52d89f;

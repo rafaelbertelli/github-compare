@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
-import GlobalStyle from "./styles/global";
 import Main from "./pages/Main";
+
+import GlobalStyle from "./styles/global";
 
 function App() {
   return (
