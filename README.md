@@ -1,4 +1,4 @@
-# GITCOMPARE
+# GITHUB COMPARE
 
 Comparison tool for github repositories
 
