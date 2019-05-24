@@ -1,16 +1,15 @@
-import axios from "axios";
-import moment from "moment";
+import axios from 'axios';
+import moment from 'moment';
 
 const api = axios.create({
-  baseURL: "https://api.github.com"
+  baseURL: 'https://api.github.com',
 });
 
-export const getRepo = repo =>
-  api
-    .get(`/repos/${repo}`)
-    .then(({ data }) => {
-      data.lastCommit = moment(data.pushed_at).fromNow();
+export const getRepo = repo => api
+  .get(`/repos/${repo}`)
+  .then(({ data }) => {
+    data.lastCommit = moment(data.pushed_at).fromNow();
 
-      return Promise.resolve(data);
-    })
-    .catch(err => Promise.reject(err.message));
+    return Promise.resolve(data);
+  })
+  .catch(err => Promise.reject(err.message));
