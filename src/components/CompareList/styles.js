@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -75,6 +75,7 @@ export const Repository = styled.div`
 
     &.delete {
       background-color: #ff3f46;
+      box-shadow: 1px 1px 1px #b9787b;
 
       &:hover {
         background-color: #cc3238;
@@ -83,6 +84,7 @@ export const Repository = styled.div`
 
     &.refresh {
       background-color: #8ceeee;
+      box-shadow: 1px 1px 1px #7bb3b3;
 
       &:hover {
         background-color: #26bfbf;
