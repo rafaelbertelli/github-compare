@@ -56,4 +56,37 @@ export const Repository = styled.div`
       background-color: #f5f5f5;
     }
   }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .button {
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+
+    &:first-child {
+      margin-right: 15px;
+    }
+
+    &.delete {
+      background-color: #ff3f46;
+
+      &:hover {
+        background-color: #cc3238;
+      }
+    }
+
+    &.refresh {
+      background-color: #8ceeee;
+
+      &:hover {
+        background-color: #26bfbf;
+      }
+    }
+  }
 `;

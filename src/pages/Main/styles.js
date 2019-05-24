@@ -15,7 +15,7 @@ export const Form = styled.form`
 
   input {
     background: #fff;
-    border: ${props => (props.withError ? "solid 2px #F00" : 0)};
+    border: ${props => (props.withError ? "solid 2px #cc3238" : 0)};
     border-radius: 3px;
     color: #444;
     flex: 1;
